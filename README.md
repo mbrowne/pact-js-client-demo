@@ -3,3 +3,11 @@ Demo of how one might use [pact-js-mocha](https://github.com/pact-foundation/pac
 
 Note: This demo is only a client-side app, so it only tests the consumer, not the provider.
 But the generated PACT files could be used to test a provider implementation.
+
+## Installation
+
+	npm i
+
+Tests should be run via npm (pact-js-mocha apparently does not work when running mocha directly):
+
+	npm test
