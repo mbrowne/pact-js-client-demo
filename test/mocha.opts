@@ -1,0 +1,4 @@
+--require ./node_modules/pact-js-mocha/src/index.js
+--compilers js:babel-core/register
+--require ./test/specHelper.js
+--delay

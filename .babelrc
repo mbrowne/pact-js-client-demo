@@ -1,0 +1,4 @@
+{
+  "presets": ["react","babel-preset-es2017-node7"],
+  "plugins": []
+}

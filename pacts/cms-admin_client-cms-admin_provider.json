@@ -1,0 +1,43 @@
+{
+  "consumer": {
+    "name": "CMS-admin client"
+  },
+  "provider": {
+    "name": "CMS-admin provider"
+  },
+  "interactions": [
+    {
+      "description": "a request for menu data",
+      "provider_state": "Has menu data",
+      "request": {
+        "method": "GET",
+        "path": "/api/v1/entities/menu/all"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "body": [
+          {
+            "name": "primaryNav",
+            "description": "Primary Nav",
+            "items": [
+              {
+                "name": "Auctions",
+                "path": "auctions"
+              },
+              {
+                "name": "Artists",
+                "path": "artits"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecificationVersion": "2.0.0"
+  }
+}
