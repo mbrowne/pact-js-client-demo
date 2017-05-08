@@ -20,8 +20,6 @@
         },
         "body": [
           {
-            "name": "primaryNav",
-            "description": "Primary Nav",
             "items": [
               {
                 "name": "Auctions",

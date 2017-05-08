@@ -7,6 +7,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "NODE_ENV=test mocha",
+    "start-mock-server": "NODE_ENV=test node scripts/start-mock-server",
     "eject": "react-scripts eject"
   },
   "dependencies": {

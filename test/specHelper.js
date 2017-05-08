@@ -12,7 +12,10 @@ const mockServer = wrapper.createServer({
 });
 
 // start the mock server
-mockServer.start().then(function () {
+mockServer.start().then(() => {
   // runs Mocha's test suite
   run();
+})
+.catch(e => {
+  console.error(e);
 });

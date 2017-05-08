@@ -1,3 +1,6 @@
+import {Matchers} from 'pact';
+const {somethingLike: like, eachLike} = Matchers;
+
 export default {
   allMenus: [
     {
@@ -12,6 +15,15 @@ export default {
         }
         //...
       ]
+      
+      /*
+      name: like('primaryNav'),
+      description: like('Primary Nav'),
+      items: eachLike({
+        name: 'Auctions',
+        path: 'auctions'
+      })
+      */
     }
   ]
 };

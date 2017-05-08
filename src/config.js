@@ -1,5 +1,9 @@
 const config = {};
 
+if (!process.env.NODE_ENV) {
+    console.warn('Warning: NODE_ENV is not defined');
+}
+
 let apiServerPort;
 switch (process.env.NODE_ENV) {
     case 'dev':
